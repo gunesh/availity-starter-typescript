@@ -20,8 +20,6 @@ const Basic = (): JSX.Element => {
         onChange={({ customerId }: Organization) => setCustomerId(customerId)}
       />
       <AvProviderSelect name="provider" label="Provider" customerId={customerId} />
-
-      This is Test 
     </Card>
   );
 };
