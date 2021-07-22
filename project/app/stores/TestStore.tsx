@@ -1,26 +1,26 @@
-import {testApi} from '@/api'
-import { observable } from 'mobx';
+// import {testApi} from '@/api'
+// import { observable } from 'mobx';
 
-export class TestStore {
-  @observable
-  synchronizing = false;
+// export class TestStore {
+//   @observable
+//   synchronizing = false;
 
-  getInfo() {
-    this.info();
-  }
+//   getInfo() {
+//     this.info();
+//   }
 
-  async info() {
-    let res: any;
-    const payload = {
+//   async info() {
+//     let res: any;
+//     const payload = {
 
-    }
-    try {
-      res = await testApi.post(payload, {
-        headers: {},
-      });
-      console.log(res.data);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-}
+//     }
+//     try {
+//       res = await testApi.post(payload, {
+//         headers: {},
+//       });
+//       console.log(res.data);
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   }
+// }
