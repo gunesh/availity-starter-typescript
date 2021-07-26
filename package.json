@@ -22,7 +22,7 @@
     "release": "av release",
     "production": "cross-env NODE_ENV=production av release && npm run update-changelog",
     "staging": "cross-env NODE_ENV=staging av release",
-    "commit": "git-cz",
+    "commit": "git-cz && npm run update-changelog",
     "update-changelog": "auto-changelog && git add ./CHANGELOG.md && git commit -m \"Update CHANGELOG.md\""
   },
   "keywords": [
